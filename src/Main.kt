@@ -71,9 +71,7 @@ suspend fun main() {
  *   Создайте класс Storage – это хранилище, в котором находится текстовая переменная text, в ней хранится басня
  *   Крылова «Мартышка и очки».
  */
-class Storage() {
-    val text = "Мартышка и очки"
-}
+
 fun String.toFirstCharList():List<Char>{
     val listOfStrings = this.trim().splitToSequence(' ').filter { it.isNotEmpty() }.toMutableList()
     val result = listOfStrings.map{it.first()}
